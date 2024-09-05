@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- 
+    1. h1 - h6 - heading
+    2. p - paragraph
+    3. img
+    4. a - anchor
+    5. ul, li - unordered list, list item
+    6. table
+    7. input
+    8. button
+    9. div
+    10. attribute - thuộc tính trong thẻ
+ -->
+<html>
+    <!-- phần đầu -->
+    <head>
+        <title>Peimon</title>
+        <meta charset="utf-8">
+        <!-- 1. external -->
+        <link rel="stylesheet" href="main.css"> 
+        <!-- 2. internal -->
+        <style>
+            /* 100d */
+            #heading-id{
+                color: violet
+            }
+            /* 10d */
+            .heading-class{
+                color: blueviolet
+            }
+            /* 1d */
+            h1 {
+                color: red;
+                font-size: 50px;
+            }
+        </style> 
+    </head>
+
+    <!-- phần thân -->
+    <body>
+        <div>
+            <!-- 3. inline 1000d <h1 title="Thuc an du tru"; style="color: rebeccapurple; font-size: 30">-->
+            <h1 title="Thuc an du tru" class="heading-class" id="heading-id">Thức ăn dự trữ</h1>
+            <!-- <input type="checkbox">
+            <input type="radio"> -->
+            <button><h2>Đăng ký để ăn</h2></button>
+            <p>ehe</p>
+            <img src="https://cdn2.fptshop.com.vn/unsafe/Uploads/images/tin-tuc/164792/Originals/hinh-anh-paimon%20(2).jpg" alt=""><hr>
+            <p></p>
+            <a href="https://fptshop.com.vn/tin-tuc/giai-tri/paimon-genshin-impact-164792">Tới trang ftp có paimon :33</a>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tên</th>
+                        <th>Địa chỉ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <center>  <td>Anh Đức</td><hr/>  </center>
+                        <td>Đà lạt</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h1 id="first-heading">CSS selector?</h1>
+            <h1 class="second-heading">CSS selector?</h1>
+            <h1 class="second-heading">CSS selector?</h1>
+            <h2 class="second-heading"> ID & Class?</h2>
+
+            <style>
+                html{
+                    font-size: 100%;
+                }
+                .box{
+                    width: 50%;
+                    height: 200px;
+                    background-color: red;
+                }
+                h3{
+                    font-size: 1em;
+                }
+            </style>
+
+            <div class="box"></div>
+
+            <h3>1. Absolute units</h3>
+            <ul>
+                <li>px</li>
+                <li>pt</li>
+                <li>cm</li>
+                <li>mm</li>
+                <li>inch</li>
+                <li>pc</li>
+            </ul>
+            <h3>2. Relative units</h3>
+            <ul>
+                <li>%</li>
+                <li>rem</li>
+                <li>em</li>
+                <li>vw - viewport width</li>
+                <li>vh - viewport height</li>
+                <li>vmin</li>
+                <li>vmax</li>
+                <li>ex</li>
+            </ul>
+        </div>  
+    </body>
+</html>

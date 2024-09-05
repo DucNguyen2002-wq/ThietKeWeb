@@ -1,0 +1,15 @@
+#first-heading {
+    color: var(--text-color);
+    font-size: 2rem;
+}
+
+.second-heading{
+    color: greenyellow;
+    font-size: 2rem;
+}
+#heading-id{
+    color: var(--text-color) !important
+}
+:root{
+    --text-color: blue;
+}
