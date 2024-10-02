@@ -1,0 +1,17 @@
+@charset "UTF-8";
+body {
+    font-family: Georgia, serif;
+    font-size: 100%;
+    background-color: white;
+}
+
+/*link styles*/
+a:link, a:visited {color: #DC6903;}
+a:focus, a:hover, a:active {color: #F9AB33;}
+
+/*header styles*/
+header {
+    color: white;
+    background: url(C:\Users\PC602\Downloads\CSS_căn_bản\CSS_15-Mô_hình_cái_hộp\Bài2\croissants_banner.jpg) 
+    no-repeat center center;
+}

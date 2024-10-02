@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!--Thuộc tính display: xác định kiểu hiện thị của phần tử-->
+    <style>
+      ul.navigation li {
+        display: inline;
+      }
+      ul.navigation li a {
+        display: block;
+      }
+    </style>
+    <!--Thuộc tính box-shadow: tạo bóng cho hộp-->
+    <!--Tạo viền cho khung với border-->
+    <!--Tạo khoảng cách với trang bằng padding-->
+    <style>
+      #ex1 {
+        border: 1px solid;
+        padding: 10px;
+        box-shadow: 5px 10px;
+      }
+      #ex2 {
+        border: 1px solid;
+        padding: 10px;
+        box-shadow: 5px 10px 4px #456445;
+      }
+      #ex3 {
+        border: 1px solid;
+        padding: 10px;
+        box-shadow: 5px 10px 4px 8px blue;
+      }
+      #ex4{
+        border: 1px solid;
+        padding: 10px;
+        box-shadow: 5px 10px 4px 8px inset lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Thuộc tính box-shadow</h1>
+    <p>Thuộc tính box-shadow quy định bóng của của một phần tử:</p>
+
+    <h2>box-shadow: 5px 10px:</h2>
+    <div id="ex1">
+        <p>Phần tử div với bóng. Giá trị đầu tiên canh theo chiều ngang và giá trị thứ hai canh theo chiều dọc.
+            Màu bóng sẽ được thừa hưởng từ màu của chữ cái.</p>
+    </div>
+
+    <h2>box-shadow: 5px 10px 4px #456445</h2>
+    <div id="ex2">
+        <p>Có thể quy định màu của bóng và độ mờ của bóng. Đây là bóng màu xanh đậm</p>
+    </div>
+
+    <h2>box-shadow: 5px 10px 4px 8px blue</h2>
+    <div id="ex3">
+        <p>Bóng màu xanh dương với độ tràn 8px</p>
+    </div>
+
+    <h2>box-shadow: 5px 10px 4px 8px inset lightblue</h2>
+    <div id="ex4">
+        <p>Có thể đổ bóng vào phía trong của hộp với "inset"</p>
+    </div>
+  </body>
+</html>
