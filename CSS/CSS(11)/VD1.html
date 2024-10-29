@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      a {
+        text-decoration: none;
+      } /* bỏ dấu gạch chân */
+      a:link {
+        color: maroon;
+      } /*định dạng cho liên kết chưa được người dùng bấm vào*/
+      a:visited {
+        color: gray;
+      } /*định dạng cho liên kết đã được người dùng bấm vào*/
+      input:focus {
+        background-color: yellow;
+      } /*áp dụng khi người dùng thao tác*/
+      a:hover {
+        color: maroon;
+        background-color: #ffd9d9;
+      }
+      a:active {
+        color: red;
+        background-color: #ffd9d9;
+      }
+      li:first-child {
+        color: red;
+      }
+      input:checked + label {
+        color: red;
+      } /* Định dạng label khi người dùng đánh dấu chọn */
+      input[type="checkbox"]:checked {
+        box-shadow: 0 0 0 3px hotpink;
+      } /* Định dạng ô chọn khi được chọn */
+      p::first-line {
+        color: red;
+      } /*chọn hàng đầu tiên của 1 phần tử văn bản*/
+      p::first-letter {
+        color: white;
+        background-color: #333;
+        border-radius: 2px;
+        font-size: 200%;
+        box-shadow: 3px 3px 0 yellow;
+        padding: 6px 3px;
+        margin-right: 5px;
+      } /*chọn kí tự đầu tiên*/
+      p::before {
+        content: "Đọc thêm: ";
+        color: red;
+        font-weight: bold;
+      } /*thêm cụm từ “Đọc thêm: ” vào trước phần tử p*/
+      p::after {
+        content: "(Kết thúc)";
+        color: red;
+        font-weight: bold;
+      }/*thêm cụm từ “(Kết thúc)” vào sau phần tử p*/
+      img[title] {border: 3px solid;}
+      /*chọn ra các phần tử với tên thuộc tính cụ thể, 
+      không quan tâm tới giá trị của thuộc tính*/
+      img[title="con vịt"] {border: 3px solid;}
+      /*chọn ra các phần tử với tên và giá trị thuộc tính cụ thể*/
+      img[title~="con"] {border: 3px solid;}
+      /*chọn ra các phần tử với tên thuộc tính và một phần giá trị của thuộc tính*/
+      img[title|="con"] {border: 3px solid;}
+      /*chọn ra các phần tử với tên thuộc tính và giá trị thuộc tính 
+      sẽ bắt đầu bằng một từ cụ thể, 
+      sau đó là dấu gạch nối (hyphen) (-)*/
+      img[src^="/images/icons"] {border: 3px solid;}
+      /*chọn ra các phần tử, với tên thuộc tính 
+      và phần đầu của giá trị được xác định trước*/
+      img[src^=".jpg"] {border: 3px solid;}
+      /*chọn ra các phần tử, với tên thuộc tính 
+      và phần cuối của giá trị được xác định trước*/
+      img[title*="on"] {border: 3px solid;}
+      /*chọn ra các phần tử, với tên thuộc tính 
+      và một phần bất kì trong giá trị thuộc tính*/
+    </style>
+  </head>
+  <body>
+    <p>Một số nội dung cần học để làm web front-end</p>
+    <p>Ví dụ, chúng ta sẽ làm nổi chữ cái đầu tiên của một đoạn</p>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+      <li>React</li>
+    </ul>
+    <div>
+      <input type="checkbox" name="my-checkbox" id="opt-in" />
+      <label for="opt-in">Chọn</label>
+    </div>
+  </body>
+</html>

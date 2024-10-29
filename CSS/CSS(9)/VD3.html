@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        width: 500px;
+        margin-left: 50px;
+        border: 1px solid red;
+      }
+      p#doan1 {
+        text-indent: 2em;
+      } /*Lùi chữ đầu tiên*/
+      p#doan2 {
+        text-indent: 25%;
+      }
+      p#doan3 {
+        text-indent: -35px;
+      }
+      p#doan1 {
+        text-align: center;
+      } /*Căn đoạn văn bản theo chiều*/
+      p#doan2 {
+        text-align: left;
+      }
+      p#doan3 {
+        text-align: right;
+      }
+      a {
+        text-decoration: none;
+      } /*Gạch châ, gạch ngangn*/
+      a {
+        text-transform: uppercase;
+      } /*Chữ hoa, chữ thường*/
+      p {
+        letter-spacing: 8px;
+      } /*Khoảng cách giữ kí tự, chữ*/
+      p {
+        word-spacing: 1.5em;
+      }
+      h1 {
+        color: darkgreen;
+        text-shadow: -0.3em -0.3em silver;
+      } /*Tạo bóng chữ*/
+      h1 {
+        color: darkgreen;
+        text-shadow: -0.3em -0.3em 0.03em silver;
+      }
+      h2 {
+        color: darkgreen;
+        text-shadow: -0.7em -0.5em 0.2em silver, 0.2em 0.2em 0.1em gray;
+      } /*Tạo nhiều bóng*/
+      body {
+        background-color: thistle;
+      }
+      h3 {
+        color: #ba9eba;
+        text-shadow: -0.05em -0.05em 0.05em white, 0.03em 0.03em 0.05em purple;
+      } /*Tạo chữ nổi*/
+      h4 {
+        color: #ba9eba;
+        text-shadow: -0.05em -0.05em 0.05em purple, 0.03em 0.03em 0.05em white;
+      } /*Tạo chữ khắc nổi*/
+      h5 {
+        text-shadow: 0 0 0.7em purple;
+      } /*Làm chữ phát sáng*/
+      p.bulleted {
+        display: list-item;
+        list-style-type: upper-alpha;
+      } /*Đánh số và dấu đầu dòng*/
+      ul {
+        list-style-image: url(/images/happy.gif);
+        list-style-type: circle;
+        list-style-position: outside;
+      }/*Xác định vị trí của số/dấu*/
+    </style>
+  </head>
+  <body>
+    <h1>Ví dụ về đổ bóng</h1>
+    <ul>
+      <li><a href="default.asp">Home</a></li>
+      <li><a href="news.asp">News</a></li>
+      <li><a href="contact.asp">Contact</a></li>
+      <li><a href="about.asp">About</a></li>
+    </ul>
+    <p id="doan1">
+      Giá trị của thuộc tính text-indent có thể là em, % hoặc px. Giá trị % được
+      tính dựa trên độ rộng (width) của phần tử cha. Giá trị -35px sẽ dịch
+      chuyển hàng đầu tiên về phía bên trái của đoạn.
+    </p>
+    <p id="doan2">
+      Giá trị của thuộc tính text-indent có thể là em, % hoặc px. Giá trị % được
+      tính dựa trên độ rộng (width) của phần tử cha. Giá trị -35px sẽ dịch
+      chuyển hàng đầu tiên về phía bên trái của đoạn.
+    </p>
+    <p id="doan3">
+      Giá trị của thuộc tính text-indent có thể là em, % hoặc px. Giá trị % được
+      tính dựa trên độ rộng (width) của phần tử cha. Giá trị -35px sẽ dịch
+      chuyển hàng đầu tiên về phía bên trái của đoạn.
+    </p>
+  </body>
+</html>
